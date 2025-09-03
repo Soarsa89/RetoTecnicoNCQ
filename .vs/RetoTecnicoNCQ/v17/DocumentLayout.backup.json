@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|solutionrelative:admintareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|solutionrelative:admintareas\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\admintareas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|solutionrelative:admintareas\\admintareas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Program.cs",
+              "RelativeDocumentMoniker": "AdminTareas\\Program.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Program.cs",
+              "RelativeToolTip": "AdminTareas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T20:35:15.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs",
+              "RelativeDocumentMoniker": "AdminTareas\\Main.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs [Design]",
+              "RelativeToolTip": "AdminTareas\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T20:35:11.739Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminTareas.csproj",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\AdminTareas.csproj",
+              "RelativeDocumentMoniker": "AdminTareas\\AdminTareas.csproj",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\AdminTareas.csproj",
+              "RelativeToolTip": "AdminTareas\\AdminTareas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-02T19:15:53.156Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
