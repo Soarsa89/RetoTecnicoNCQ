@@ -14,4 +14,8 @@
     <PackageReference Include="DevExpress.Win.Design" Version="25.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AdminTareas.ViewModels\AdminTareas.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

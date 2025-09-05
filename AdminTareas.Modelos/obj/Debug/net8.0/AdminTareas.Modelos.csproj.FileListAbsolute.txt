@@ -1,0 +1,12 @@
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\bin\Debug\net8.0\AdminTareas.Modelos.deps.json
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\bin\Debug\net8.0\AdminTareas.Modelos.dll
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\bin\Debug\net8.0\AdminTareas.Modelos.pdb
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.AssemblyInfoInputs.cache
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.AssemblyInfo.cs
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.csproj.CoreCompileInputs.cache
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.sourcelink.json
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.dll
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\refint\AdminTareas.Modelos.dll
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\AdminTareas.Modelos.pdb
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Modelos\obj\Debug\net8.0\ref\AdminTareas.Modelos.dll
