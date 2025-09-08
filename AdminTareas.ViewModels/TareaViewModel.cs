@@ -11,11 +11,27 @@ namespace AdminTareas.ViewModels
     public class TareaViewModel : INotifyPropertyChanged
     {
         private readonly ITareaRepository _repository;
+        private int _id;
         private string _descripcion;
         private string _estado;
+        private string _prioridad;
+        private DateTime _fechaCompromiso;
+        private string _notas;
         private ObservableCollection<Tarea> _tareas;
 
 
+        public int Id
+        {
+            get => _id;
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
         public string Descripcion
         {
             get => _descripcion;
@@ -41,6 +57,47 @@ namespace AdminTareas.ViewModels
             }
         }
 
+        public string Prioridad
+        {
+            get => _prioridad;
+            set
+            {
+                if (_prioridad != value)
+                {
+
+                    _prioridad = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public DateTime FechaCompromiso
+        {
+            get=>_fechaCompromiso;
+            set
+            {
+                if( _fechaCompromiso != value)
+                {
+                    _fechaCompromiso = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public string Notas
+        {
+            get => _notas;
+            set
+            {
+                if (_notas != value)
+                {
+                    _notas = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
         public ObservableCollection<Tarea> Tareas
         {
             get => _tareas;
@@ -50,7 +107,8 @@ namespace AdminTareas.ViewModels
                 OnPropertyChanged();
             }
         }
-        public ICommand GuardarCommand { get; set; }
+        public IAsyncRelayCommand GuardarCommand { get; }
+        public IAsyncRelayCommand ActualizarCommand { get; }
         public ICommand CargarTareasCommand { get; }
         public ICommand EliminarCommand { get; }
         public ICommand EditarCommand { get; }
@@ -58,31 +116,88 @@ namespace AdminTareas.ViewModels
         public TareaViewModel(ITareaRepository repository)
         {
             _repository = repository;
+            _tareas = new ObservableCollection<Tarea>();
             Tareas = new ObservableCollection<Tarea>();
-            GuardarCommand = new RelayCommand(GuardarTarea, CanGuardarTarea);
+            GuardarCommand = new AsyncRelayCommand(GuardarTarea);
+            ActualizarCommand = new AsyncRelayCommand(ActualizarTarea);
             CargarTareasCommand = new RelayCommand(CargarTareas);
             EliminarCommand = new RelayCommand<Tarea>(EliminarTarea);
             EditarCommand = new RelayCommand<Tarea>(EditarTarea);
 
+            _descripcion = string.Empty;
+            _estado = string.Empty;
+            _prioridad= string.Empty;
+            _notas = string.Empty;
+           
+
         }
 
-        private void GuardarTarea()
+        private async Task GuardarTarea()
         {
+
+            
+            if (!ValidatoDatosFormulario()) return ;          
 
             var nuevaTarea = new Tarea
             {
                 Descripcion = _descripcion,
                 Estado = _estado,
-                Prioridad = "Alta",
-                FechaCompromiso = DateTime.Now.AddDays(2),
-                Notas = "Prueba"
+                Prioridad = _prioridad,
+                FechaCompromiso = _fechaCompromiso,
+                Notas = _notas
 
             };
-            _repository.AgregarTarea(nuevaTarea);
-            Tareas.Add(nuevaTarea); // Se agrega la nueva tarea a la colección observable
+            var response = await _repository.AgregarTarea(nuevaTarea);
+
+
+            if (response)
+            {
+                Tareas.Add(nuevaTarea);
+                LimpiarDatos();                
+
+            }
+           
+
+        }
+
+        private async Task ActualizarTarea()
+        {
+            try
+            {
+                //Validar Formulario
+                if (!ValidatoDatosFormulario()) return;
+
+                var tareaExistente = await _repository.ObtenerPorIdAsync(Id);
+
+                if (tareaExistente == null)
+                {
+                    throw new Exception("La tarea a actualizar no existe.");
+                }
+
+                // Actualizar solo los campos modificados
+                tareaExistente.Descripcion = Descripcion;
+                tareaExistente.Estado = Estado!;
+                tareaExistente.Prioridad = Prioridad!;
+                tareaExistente.FechaCompromiso = FechaCompromiso;
+                tareaExistente.Notas = Notas;
+               
+
+                await _repository.EditarTarea(tareaExistente); ;
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al actualizar la tarea: {ex.Message}", ex);
+            }
+        }
+
+        public void LimpiarDatos()
+        {
+            Id = 0;
             Descripcion = string.Empty;
             Estado = string.Empty;
-
+            Prioridad = string.Empty;
+            Notas = string.Empty;
         }
 
         private bool CanGuardarTarea()
@@ -100,7 +215,7 @@ namespace AdminTareas.ViewModels
             }
         }
 
-        private void EliminarTarea(Tarea tarea)
+        private void EliminarTarea(Tarea? tarea)
         {
             if (tarea == null) return;
 
@@ -108,7 +223,7 @@ namespace AdminTareas.ViewModels
             Tareas.Remove(tarea);
         }
 
-        private void EditarTarea(Tarea tarea)
+        private void EditarTarea(Tarea? tarea)
         {
             if (tarea == null) return;
 
@@ -126,6 +241,31 @@ namespace AdminTareas.ViewModels
 
             Descripcion = string.Empty;
             Estado = string.Empty;
+        }
+
+
+
+        //Validar Datos del Fomulario
+        private bool ValidatoDatosFormulario()
+        {           
+            if (string.IsNullOrWhiteSpace(_descripcion))
+            {
+                return false;
+            }            
+            if (_estado == null)
+            {
+                return false;
+            }          
+            if (_prioridad == null)
+            {
+                return false;
+            }        
+            if (_fechaCompromiso == default(DateTime))
+            {
+                return false;
+            }
+
+            return true;
         }
 
 

@@ -5421,6 +5421,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "AdminTareas.ViewModels >= 1.0.0",
+      "CommunityToolkit.Mvvm >= 8.4.0",
       "DevExpress.Data >= 25.1.4",
       "DevExpress.Win >= 25.1.4",
       "DevExpress.Win.Design >= 25.1.4"
@@ -5486,6 +5487,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.4.0, )"
+          },
           "DevExpress.Data": {
             "target": "Package",
             "version": "[25.1.4, )"

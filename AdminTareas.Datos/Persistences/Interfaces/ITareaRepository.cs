@@ -4,9 +4,10 @@ namespace AdminTareas.Datos.Persistences.Interfaces
 {
     public interface ITareaRepository
     {
-        void AgregarTarea(Tarea tarea);
+        Task<bool> AgregarTarea(Tarea tarea);
         List<Tarea> ObtenerTareas();
-        void EditarTarea(Tarea tarea);
+        Task<Tarea?> ObtenerPorIdAsync(int id);
+        Task<bool> EditarTarea(Tarea tarea);
         void EliminarTarea(int id);
     }
 }

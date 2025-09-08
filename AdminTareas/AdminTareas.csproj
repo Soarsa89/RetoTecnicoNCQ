@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="DevExpress.Data" Version="25.1.4" />
     <PackageReference Include="DevExpress.Win" Version="25.1.4" />
     <PackageReference Include="DevExpress.Win.Design" Version="25.1.4" />
