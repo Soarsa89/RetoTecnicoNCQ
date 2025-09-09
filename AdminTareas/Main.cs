@@ -14,18 +14,24 @@ namespace AdminTareas
         private readonly TareaViewModel _tareaViewModel;
         private readonly EstadoTareaViewModel _estadoTareaViewModel;
         private readonly PrioridadTareaViewModel _prioridadTareaViewModel;
-        private bool _modoEdicion = false; 
-        private int _tareaEnEdicionId = 0; 
+        private bool _modoEdicion = false;
+        private int _tareaEnEdicionId = 0;
+        private string _estadoTareaAntesActualizar;
 
+        #region Inicilializacion 
         public Main()
         {
             InitializeComponent();
 
             gridView1.OptionsView.RowAutoHeight = true;
-          
+            this.Shown += Main_Shown;
+
+
+            //Contexto para Acceder a los Datos.          
             var optionsBuilder = new DbContextOptionsBuilder<AdminTareaContext>();
             var dbContext = new AdminTareaContext(optionsBuilder.Options);
 
+            //Repositorios 
             ITareaRepository tarea = new TareaRepository(dbContext);
             IEstadoTareaRespository estadoTarea = new EstadoTareaRepository(dbContext);
             IPrioridadTareaRepository prioridadTarea = new PrioridadTareaRepository(dbContext);
@@ -35,16 +41,20 @@ namespace AdminTareas
 
             lookUpEdit1.Properties.DataSource = _estadoTareaViewModel.EstadoTarea;
             lookUpEdit1.Properties.DisplayMember = "Nombre";
-            lookUpEdit1.Properties.ValueMember = "Nombre";
-            lookUpEdit1.Properties.NullText = "Seleccione un estado";
+            lookUpEdit1.Properties.ValueMember = "Nombre";            
+            lookUpEdit1.Properties.NullText = "Seleccione la prioridad";
+
 
             lookUpEditPrioridad.Properties.DataSource = _prioridadTareaViewModel.PrioridadTareas;
             lookUpEditPrioridad.Properties.DisplayMember = "Nombre";
             lookUpEditPrioridad.Properties.ValueMember = "Nombre";
             lookUpEditPrioridad.Properties.NullText = "Seleccione la prioridad";
 
+            //iNICIALIZAR LOS VIEWMODELS
             _tareaViewModel = new TareaViewModel(tarea);
             _tareaViewModel.FechaCompromiso = DateTime.Now.Date;
+
+            _tareaViewModel.Estado = "PENDIENTE";
 
             txtDescricion.DataBindings.Add("Text", _tareaViewModel, "Descripcion", true, DataSourceUpdateMode.OnPropertyChanged);
             lookUpEdit1.DataBindings.Add("EditValue", _tareaViewModel, "Estado", true, DataSourceUpdateMode.OnPropertyChanged);
@@ -52,17 +62,17 @@ namespace AdminTareas
             fechaCompromiso.DataBindings.Add("EditValue", _tareaViewModel, "FechaCompromiso", true, DataSourceUpdateMode.OnPropertyChanged);
             txtNotas.DataBindings.Add("Text", _tareaViewModel, "Notas", true, DataSourceUpdateMode.OnPropertyChanged);
 
-            
+            //Cambiar el label de Boton de Guardar a Actualizar
             ConfigurarBotonGuardar();
+            
 
-           
             dgvTareas.DataSource = _tareaViewModel.Tareas;
 
             _tareaViewModel.CargarTareasCommand.Execute(null);
             _estadoTareaViewModel!.CargarEstadoTareaCommand.Execute(null);
             _prioridadTareaViewModel!.CargarPriroridaTareaCommand.Execute(null);
 
-         
+
             RepositoryItemButtonEdit btnEditar = new RepositoryItemButtonEdit();
             btnEditar.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             btnEditar.Buttons[0].Caption = "Editar";
@@ -75,11 +85,11 @@ namespace AdminTareas
             btnEliminar.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Delete;
             btnEliminar.ButtonClick += eliminarTarea;
 
-           
+
             dgvTareas.RepositoryItems.Add(btnEditar);
             dgvTareas.RepositoryItems.Add(btnEliminar);
 
-         
+
             if (gridView1.Columns["Editar"] == null)
             {
                 var colEditar = gridView1.Columns.AddVisible("Editar", "Editar");
@@ -92,28 +102,24 @@ namespace AdminTareas
                 colEliminar.ColumnEdit = btnEliminar;
             }
         }
-
-        #region Métodos para manejar el botón Guardar/Actualizar
-
-        
+        #endregion
+        #region Métodos CRUD
         private void ConfigurarBotonGuardar()
         {
             _modoEdicion = false;
             _tareaEnEdicionId = 0;
             btn_guardar.Text = "Guardar";
-            btn_guardar.Click -= ActualizarTarea; 
-            btn_guardar.Click += CrearTarea; 
-        }        
+            btn_guardar.Click -= ActualizarTarea;
+            btn_guardar.Click += CrearTarea;
+        }
         private void ConfigurarBotonActualizar(int tareaId)
         {
             _modoEdicion = true;
             _tareaEnEdicionId = tareaId;
             btn_guardar.Text = "Actualizar";
-            btn_guardar.Click -= CrearTarea; 
-            btn_guardar.Click += ActualizarTarea; 
-        }
-        #endregion
-        
+            btn_guardar.Click -= CrearTarea;
+            btn_guardar.Click += ActualizarTarea;
+        }    
         private void CrearTarea(object? sender, EventArgs e)
         {
             try
@@ -124,8 +130,8 @@ namespace AdminTareas
                 var estadoSeleccionado = lookUpEdit1.GetSelectedDataRow() as EstadoTarea;
                 var prioridadSeleccionada = lookUpEditPrioridad.GetSelectedDataRow() as PrioridadTarea;
 
-              
-                _tareaViewModel.Id = 0; 
+
+                _tareaViewModel.Id = 0;
                 _tareaViewModel.Estado = estadoSeleccionado?.Nombre!;
                 _tareaViewModel.Prioridad = prioridadSeleccionada?.Nombre!;
 
@@ -143,6 +149,7 @@ namespace AdminTareas
 
                     // Limpiar formulario 
                     _tareaViewModel.LimpiarDatos();
+                    txtDescricion.Focus();
                 }
                 else
                 {
@@ -159,65 +166,7 @@ namespace AdminTareas
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Error);
             }
-        }    
-        private void ActualizarTarea(object? sender, EventArgs e)
-        {
-            try
-            {
-                if (!ValidarFormulario() )
-                    return;
-
-                var estadoSeleccionado = lookUpEdit1.GetSelectedDataRow() as EstadoTarea;
-                var prioridadSeleccionada = lookUpEditPrioridad.GetSelectedDataRow() as PrioridadTarea;
-
-                if (estadoSeleccionado!.Nombre == "FINALIZADA") 
-                {
-                    XtraMessageBox.Show("No se pudo actualizar una tarea finalizada.",
-                       "",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                    return;
-                }
-
-                _tareaViewModel.Id = _tareaEnEdicionId;
-                _tareaViewModel.Estado = estadoSeleccionado?.Nombre!;
-                _tareaViewModel.Prioridad = prioridadSeleccionada?.Nombre!;
-
-                
-                if (_tareaViewModel.ActualizarCommand?.CanExecute(null) == true)
-                {
-                    _tareaViewModel.ActualizarCommand.Execute(null);
-
-                    XtraMessageBox.Show("Tarea actualizada correctamente!",
-                     "Éxito",
-                     MessageBoxButtons.OK,
-                     MessageBoxIcon.Information);
-
-                    
-                    _tareaViewModel.CargarTareasCommand.Execute(null);
-                }
-                else
-                {
-                    XtraMessageBox.Show("No se pudo actualizar la tarea. Verifique los datos.",
-                       "Error de actualización",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Warning);
-                    return; 
-                }
-
-               
-                _tareaViewModel.LimpiarDatos();
-                ConfigurarBotonGuardar();
-            }
-            catch (Exception ex)
-            {
-                XtraMessageBox.Show("Error al actualizar la tarea: " + ex.Message,
-                       "Error",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Error);
-            }
         }
-
         private void editarTarea(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             try
@@ -230,13 +179,19 @@ namespace AdminTareas
 
                     if (tarea != null)
                     {
-                       
+
                         _tareaViewModel.Id = tarea.Id;
                         _tareaViewModel.Descripcion = tarea.Descripcion;
                         _tareaViewModel.Estado = tarea.Estado;
                         _tareaViewModel.Prioridad = tarea.Prioridad;
                         _tareaViewModel.FechaCompromiso = tarea.FechaCompromiso;
                         _tareaViewModel.Notas = tarea.Notas ?? string.Empty;
+
+                        _estadoTareaAntesActualizar = tarea.Estado;
+
+                        lblTareaEditando.Text = tarea.Descripcion.Length > 50
+                            ? $": {tarea.Descripcion.Substring(0, 50)}..."
+                            : $": {tarea.Descripcion}";
 
                         // Cambiar el botón a modo actualizar
                         ConfigurarBotonActualizar(tarea.Id);
@@ -251,7 +206,66 @@ namespace AdminTareas
                        MessageBoxIcon.Error);
             }
         }
+        private void ActualizarTarea(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (!ValidarFormulario())
+                    return;
 
+                var estadoSeleccionado = lookUpEdit1.GetSelectedDataRow() as EstadoTarea;
+                var prioridadSeleccionada = lookUpEditPrioridad.GetSelectedDataRow() as PrioridadTarea;
+
+
+                if (_estadoTareaAntesActualizar == "FINALIZADA")
+                {
+                    XtraMessageBox.Show("No se pudo actualizar una tarea finalizada.",
+                       "",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning);
+                    _tareaViewModel.LimpiarDatos();
+                    return;
+                }
+
+                _tareaViewModel.Id = _tareaEnEdicionId;
+                _tareaViewModel.Estado = estadoSeleccionado?.Nombre!;
+                _tareaViewModel.Prioridad = prioridadSeleccionada?.Nombre!;
+
+
+                if (_tareaViewModel.ActualizarCommand?.CanExecute(null) == true)
+                {
+                    _tareaViewModel.ActualizarCommand.Execute(null);
+
+                    XtraMessageBox.Show("Tarea actualizada correctamente!",
+                     "Éxito",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information);
+
+
+                    _tareaViewModel.CargarTareasCommand.Execute(null);
+                    txtDescricion.Focus();
+                }
+                else
+                {
+                    XtraMessageBox.Show("No se pudo actualizar la tarea. Verifique los datos.",
+                       "Error de actualización",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+                _tareaViewModel.LimpiarDatos();
+                ConfigurarBotonGuardar();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show("Error al actualizar la tarea: " + ex.Message,
+                       "Error",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Error);
+            }
+        }      
         private void eliminarTarea(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             try
@@ -264,7 +278,7 @@ namespace AdminTareas
 
                     if (tarea != null)
                     {
-                        if(tarea.Estado != "EN_PROCESO")
+                        if (tarea.Estado != "EN_PROCESO")
                         {
                             if (XtraMessageBox.Show($"¿Está seguro que desea eliminar la tarea {tarea.Id}?",
                             "Confirmar eliminación",
@@ -284,8 +298,12 @@ namespace AdminTareas
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Warning);
                         }
-                        
+
+                        _tareaViewModel.LimpiarDatos();
+                        txtDescricion.Focus();
+
                     }
+                    
                 }
             }
             catch (Exception ex)
@@ -295,9 +313,12 @@ namespace AdminTareas
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Error);
             }
-        }              
+        }
+
+        #endregion
+        //Validaciones
         private bool ValidarFormulario()
-        {           
+        {
             if (string.IsNullOrWhiteSpace(txtDescricion.Text))
             {
                 XtraMessageBox.Show("La descripción es obligatoria.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -311,14 +332,14 @@ namespace AdminTareas
                 lookUpEdit1.Focus();
                 return false;
             }
-            
+
             if (lookUpEditPrioridad.EditValue == null || lookUpEditPrioridad.EditValue.ToString() == "")
             {
                 XtraMessageBox.Show("Debe seleccionar una prioridad válida para la tarea.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 lookUpEditPrioridad.Focus();
                 return false;
             }
-          
+
             if (fechaCompromiso.EditValue == null || fechaCompromiso.EditValue == DBNull.Value)
             {
                 XtraMessageBox.Show("Debe seleccionar una fecha de compromiso.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -344,11 +365,18 @@ namespace AdminTareas
 
             return true;
         }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            _tareaViewModel.LimpiarDatos();           
+            _tareaViewModel.LimpiarDatos();
             ConfigurarBotonGuardar();
+            txtDescricion.Focus();
+
+        }
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            txtDescricion.Focus();
+            txtDescricion.SelectAll(); 
         }
     }
 }

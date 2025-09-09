@@ -14,7 +14,6 @@ namespace AdminTareas.ViewModels
         public ICommand CargarEstadoTareaCommand { get; }
         private ObservableCollection<EstadoTarea> _estadoTarea;
 
-
         public ObservableCollection<EstadoTarea> EstadoTarea
         {
             get => _estadoTarea;
@@ -24,17 +23,13 @@ namespace AdminTareas.ViewModels
                 OnPropertyChanged();
             }
         }
-
-
         public EstadoTareaViewModel(IEstadoTareaRespository repository)
         {
             _repository = repository;
             _estadoTarea = new ObservableCollection<EstadoTarea>();
             EstadoTarea = new ObservableCollection<EstadoTarea>();
             CargarEstadoTareaCommand = new RelayCommand(CargarEstadoTarea);
-
         }
-
         private void CargarEstadoTarea()
         {
             var listaDeEstadoTarea = _repository.ObtenerEstadoTarea();

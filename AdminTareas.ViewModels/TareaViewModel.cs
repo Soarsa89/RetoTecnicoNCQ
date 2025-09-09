@@ -127,8 +127,7 @@ namespace AdminTareas.ViewModels
             _descripcion = string.Empty;
             _estado = string.Empty;
             _prioridad= string.Empty;
-            _notas = string.Empty;
-           
+            _notas = string.Empty;          
 
         }
 
@@ -195,8 +194,8 @@ namespace AdminTareas.ViewModels
         {
             Id = 0;
             Descripcion = string.Empty;
-            Estado = string.Empty;
-            Prioridad = string.Empty;
+            Estado = "PENDIENTE";
+            Prioridad =" string.Empty";
             Notas = string.Empty;
         }
 
@@ -214,7 +213,6 @@ namespace AdminTareas.ViewModels
                 Tareas.Add(tarea);
             }
         }
-
         private void EliminarTarea(Tarea? tarea)
         {
             if (tarea == null) return;
@@ -242,7 +240,6 @@ namespace AdminTareas.ViewModels
             Descripcion = string.Empty;
             Estado = string.Empty;
         }
-
 
 
         //Validar Datos del Fomulario

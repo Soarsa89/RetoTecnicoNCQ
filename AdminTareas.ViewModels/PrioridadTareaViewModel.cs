@@ -19,11 +19,9 @@ namespace AdminTareas.ViewModels
             set
             {
                 _prioridadTarea = value;
-                OnPropertyChanged();
-                
+                OnPropertyChanged();                
             }
         }
-
         public PrioridadTareaViewModel(IPrioridadTareaRepository repository)
         {
             _repository = repository;
@@ -31,7 +29,6 @@ namespace AdminTareas.ViewModels
             PrioridadTareas = new ObservableCollection<PrioridadTarea>();
             CargarPriroridaTareaCommand = new RelayCommand(CargarPrioridaTarea);
         }
-
         private void CargarPrioridaTarea()
         {
             var listaDePrioridadTarea = _repository.ObtenerPrioridadTarea();
@@ -41,7 +38,6 @@ namespace AdminTareas.ViewModels
                 PrioridadTareas.Add(priroridadTarea);
             }
         }
-
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null!)
         {

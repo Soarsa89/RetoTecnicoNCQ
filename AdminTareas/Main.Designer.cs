@@ -66,6 +66,7 @@
             backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
+            lblTareaEditando = new DevExpress.XtraEditors.LabelControl();
             fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)panelControl1).BeginInit();
             panelControl1.SuspendLayout();
@@ -95,11 +96,12 @@
             fluentDesignFormContainer1.Location = new Point(303, 0);
             fluentDesignFormContainer1.Margin = new Padding(4, 3, 4, 3);
             fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            fluentDesignFormContainer1.Size = new Size(684, 546);
+            fluentDesignFormContainer1.Size = new Size(703, 741);
             fluentDesignFormContainer1.TabIndex = 0;
             // 
             // panelControl1
             // 
+            panelControl1.Controls.Add(lblTareaEditando);
             panelControl1.Controls.Add(txtNotas);
             panelControl1.Controls.Add(lblNotas);
             panelControl1.Controls.Add(lblFechaCompromiso);
@@ -116,7 +118,7 @@
             panelControl1.Dock = DockStyle.Top;
             panelControl1.Location = new Point(0, 0);
             panelControl1.Name = "panelControl1";
-            panelControl1.Size = new Size(667, 329);
+            panelControl1.Size = new Size(703, 329);
             panelControl1.TabIndex = 8;
             // 
             // txtNotas
@@ -225,11 +227,13 @@
             // 
             // lblAgregarTareas
             // 
-            lblAgregarTareas.Location = new Point(25, 12);
+            lblAgregarTareas.Appearance.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAgregarTareas.Appearance.Options.UseFont = true;
+            lblAgregarTareas.Location = new Point(154, 12);
             lblAgregarTareas.Name = "lblAgregarTareas";
-            lblAgregarTareas.Size = new Size(70, 13);
+            lblAgregarTareas.Size = new Size(53, 23);
             lblAgregarTareas.TabIndex = 7;
-            lblAgregarTareas.Text = "Agregar Tarea";
+            lblAgregarTareas.Text = "Tarea";
             // 
             // lblDescricion
             // 
@@ -277,7 +281,6 @@
             dgvTareas.Size = new Size(639, 294);
             dgvTareas.TabIndex = 6;
             dgvTareas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
-        
             // 
             // gridView1
             // 
@@ -355,7 +358,7 @@
             accordionControl1.Margin = new Padding(4, 3, 4, 3);
             accordionControl1.Name = "accordionControl1";
             accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            accordionControl1.Size = new Size(303, 546);
+            accordionControl1.Size = new Size(303, 741);
             accordionControl1.TabIndex = 1;
             accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -372,21 +375,33 @@
             fluentDesignFormControl1.Margin = new Padding(4, 3, 4, 3);
             fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             fluentDesignFormControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] { repositoryItemFontEdit1 });
-            fluentDesignFormControl1.Size = new Size(987, 0);
+            fluentDesignFormControl1.Size = new Size(1006, 0);
             fluentDesignFormControl1.TabIndex = 2;
             fluentDesignFormControl1.TabStop = false;
             fluentDesignFormControl1.TitleItemLinks.Add(barEditItem1);
+            // 
+            // lblTareaEditando
+            // 
+            lblTareaEditando.Appearance.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTareaEditando.Appearance.Options.UseFont = true;
+            lblTareaEditando.Location = new Point(225, 12);
+            lblTareaEditando.Name = "lblTareaEditando";
+            lblTareaEditando.Size = new Size(0, 23);
+            lblTareaEditando.TabIndex = 17;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(987, 546);
+            ClientSize = new Size(1006, 741);
             Controls.Add(fluentDesignFormContainer1);
             Controls.Add(accordionControl1);
             Controls.Add(fluentDesignFormControl1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "Main";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Administrador Tareas";
             fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)panelControl1).EndInit();
@@ -453,5 +468,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colUpdatedAt;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit buttonDeleteRow;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit buttonEditarRow;
+        private DevExpress.XtraEditors.LabelControl lblTareaEditando;
     }
 }
