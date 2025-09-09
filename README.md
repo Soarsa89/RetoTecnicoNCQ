@@ -23,7 +23,7 @@ Es una aplicación de escritorio para administrar tareas sencillas, con una inte
 ## Ejecutar El proyecto
 
 - Clonar el repositorio : '<https://github.com/Soarsa89/RetoTecnicoNCQ.git>'
-- ir a : cd RetoTecnicoNCQ/AdminTarea
+- ir a : cd RetoTecnicoNCQ/AdminTareas
 - Ejecutar: dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.8
 - Retornar a la raiz del proyecto:  cd ..
 - Ejecutar migraciones para crear la Base de datos y en  caso de que no este cargado los estados y la prioridad de las tareas 
