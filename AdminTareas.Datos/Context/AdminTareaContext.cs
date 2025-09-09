@@ -24,16 +24,10 @@ namespace AdminTareas.Datos.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                // Ruta al proyecto de datos desde el ejecutable
-                var exeBase = AppDomain.CurrentDomain.BaseDirectory;
-
-                // Subimos hasta la raíz del solution y luego al proyecto AdminTareas.Datos
-                var projectDir = Path.GetFullPath(Path.Combine(exeBase, "..", "..", "..", "..", "AdminTareas.Datos"));
-
-                // Ruta completa del archivo SQLite
-                var dbPath = Path.Combine(projectDir, "adminTareas.db");
-
-                // Configuración de SQLite apuntando al archivo correcto
+                
+                var exeBase = AppDomain.CurrentDomain.BaseDirectory;               
+                var projectDir = Path.GetFullPath(Path.Combine(exeBase, "..", "..", "..", "..", "AdminTareas.Datos"));               
+                var dbPath = Path.Combine(projectDir, "adminTareas.db");              
                 optionsBuilder.UseSqlite($"Data Source={dbPath}");
             }
         }
