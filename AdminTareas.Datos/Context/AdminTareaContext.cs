@@ -11,14 +11,33 @@ namespace AdminTareas.Datos.Context
         public DbSet<EstadoTarea> EstadoTareas { get; set; }
         public DbSet<PrioridadTarea> PrioridadTareas { get; set; }
 
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "adminTareas.db");
+        //        optionsBuilder.UseSqlite($"Data Source={dbPath}");
+        //    }
+        //}
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "adminTareas.db");
+                // Ruta al proyecto de datos desde el ejecutable
+                var exeBase = AppDomain.CurrentDomain.BaseDirectory;
+
+                // Subimos hasta la raíz del solution y luego al proyecto AdminTareas.Datos
+                var projectDir = Path.GetFullPath(Path.Combine(exeBase, "..", "..", "..", "..", "AdminTareas.Datos"));
+
+                // Ruta completa del archivo SQLite
+                var dbPath = Path.Combine(projectDir, "adminTareas.db");
+
+                // Configuración de SQLite apuntando al archivo correcto
                 optionsBuilder.UseSqlite($"Data Source={dbPath}");
             }
         }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

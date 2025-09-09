@@ -1,4 +1,3 @@
-C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Datos\bin\Debug\net8.0\adminTareas.db
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Datos\bin\Debug\net8.0\AdminTareas.Datos.deps.json
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Datos\bin\Debug\net8.0\AdminTareas.Datos.runtimeconfig.json
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.Datos\bin\Debug\net8.0\AdminTareas.Datos.dll

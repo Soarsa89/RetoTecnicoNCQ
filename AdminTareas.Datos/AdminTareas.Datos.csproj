@@ -20,8 +20,8 @@
   </ItemGroup>
 
 
-	<ItemGroup>
+	<!--<ItemGroup>
 		<None Include="adminTareas.db" CopyToOutputDirectory="PreserveNewest" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 </Project>

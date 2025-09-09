@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.datos\\context\\admintareacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|solutionrelative:admintareas.datos\\context\\admintareacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F665B6A-20EE-4896-A214-01D7E9CC04D1}|AdminTareas.Utilidades\\AdminTareas.Utilidades.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.utilidades\\conexion\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F665B6A-20EE-4896-A214-01D7E9CC04D1}|AdminTareas.Utilidades\\AdminTareas.Utilidades.csproj|solutionrelative:admintareas.utilidades\\conexion\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.datos\\admintareas.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|solutionrelative:admintareas.datos\\admintareas.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\admintareas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|solutionrelative:admintareas\\admintareas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.datos\\admintareas.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|solutionrelative:admintareas.datos\\admintareas.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B9F609-05A7-4976-B937-4638ECCF6A5C}|AdminTareas\\AdminTareas.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{87356C2F-384D-4E50-BC65-1F94DB979B46}|AdminTareas.ViewModels\\AdminTareas.ViewModels.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.viewmodels\\tareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87356C2F-384D-4E50-BC65-1F94DB979B46}|AdminTareas.ViewModels\\AdminTareas.ViewModels.csproj|solutionrelative:admintareas.viewmodels\\tareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.datos\\context\\admintareacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|solutionrelative:admintareas.datos\\context\\admintareacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52F2EE4F-85F2-4A31-9857-1F56B0A17F6C}|AdminTareas.Datos\\AdminTareas.Datos.csproj|c:\\code\\laboratorios\\retotecniconcq\\retotecniconcq\\admintareas.datos\\context\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,64 +105,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Main.Designer.cs",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.Designer.cs",
-              "RelativeDocumentMoniker": "AdminTareas\\Main.Designer.cs",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.Designer.cs",
-              "RelativeToolTip": "AdminTareas\\Main.Designer.cs",
-              "ViewState": "AgIAAK0BAAAAAAAAAAAswMgBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T04:12:22.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TareaRepository.cs",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "RelativeDocumentMoniker": "AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T23:52:37.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ITareaRepository.cs",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
-              "RelativeDocumentMoniker": "AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
-              "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T04:38:09.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EstadoTareaViewModel.cs",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
-              "RelativeDocumentMoniker": "AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
-              "RelativeToolTip": "AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB8AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:01:37.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PrioridadTareaViewModel.cs",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\PrioridadTareaViewModel.cs",
               "RelativeDocumentMoniker": "AdminTareas.ViewModels\\PrioridadTareaViewModel.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\PrioridadTareaViewModel.cs",
               "RelativeToolTip": "AdminTareas.ViewModels\\PrioridadTareaViewModel.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowB0AAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA5wB0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T03:44:33.104Z"
+              "WhenOpened": "2025-09-07T03:44:33.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,25 +124,27 @@
               "RelativeDocumentMoniker": "AdminTareas.Datos\\Persistences\\Repositories\\EstadoTareaRepository.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\EstadoTareaRepository.cs",
               "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Repositories\\EstadoTareaRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T04:23:29.641Z"
+              "WhenOpened": "2025-09-06T04:23:29.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AdminTareas.csproj",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\AdminTareas.csproj",
               "RelativeDocumentMoniker": "AdminTareas\\AdminTareas.csproj",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\AdminTareas.csproj",
               "RelativeToolTip": "AdminTareas\\AdminTareas.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-07T20:24:03.617Z"
+              "WhenOpened": "2025-09-07T20:24:03.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AppSettings.cs",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Utilidades\\Conexion\\AppSettings.cs",
               "RelativeDocumentMoniker": "AdminTareas.Utilidades\\Conexion\\AppSettings.cs",
@@ -203,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\appsettings.json",
               "RelativeDocumentMoniker": "AdminTareas\\appsettings.json",
@@ -211,11 +165,90 @@
               "RelativeToolTip": "AdminTareas\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-09T03:31:15.21Z"
+              "WhenOpened": "2025-09-09T03:31:15.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "AdminTareas.Datos.csproj",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\AdminTareas.Datos.csproj",
+              "RelativeDocumentMoniker": "AdminTareas.Datos\\AdminTareas.Datos.csproj",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\AdminTareas.Datos.csproj",
+              "RelativeToolTip": "AdminTareas.Datos\\AdminTareas.Datos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-09T03:10:27.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminTareaContext.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Context\\AdminTareaContext.cs",
+              "RelativeDocumentMoniker": "AdminTareas.Datos\\Context\\AdminTareaContext.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Context\\AdminTareaContext.cs",
+              "RelativeToolTip": "AdminTareas.Datos\\Context\\AdminTareaContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T04:02:38.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstadoTareaViewModel.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
+              "RelativeDocumentMoniker": "AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
+              "RelativeToolTip": "AdminTareas.ViewModels\\EstadoTareaViewModel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T04:01:37.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITareaRepository.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
+              "RelativeDocumentMoniker": "AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
+              "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Interfaces\\ITareaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T04:38:09.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TareaRepository.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
+              "RelativeDocumentMoniker": "AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
+              "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T23:52:37.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "AdminTareas\\Main.Designer.cs",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.Designer.cs",
+              "RelativeToolTip": "AdminTareas\\Main.Designer.cs",
+              "ViewState": "AgIAAK0BAAAAAAAAAAAswMgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T04:12:22.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs",
               "RelativeDocumentMoniker": "AdminTareas\\Main.cs",
@@ -228,36 +261,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminTareas.Datos.csproj",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\AdminTareas.Datos.csproj",
-              "RelativeDocumentMoniker": "AdminTareas.Datos\\AdminTareas.Datos.csproj",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\AdminTareas.Datos.csproj",
-              "RelativeToolTip": "AdminTareas.Datos\\AdminTareas.Datos.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-09T03:10:27.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs",
               "RelativeDocumentMoniker": "AdminTareas\\Main.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs [Design]",
               "RelativeToolTip": "AdminTareas\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T04:13:14.658Z"
+              "WhenOpened": "2025-09-05T04:13:14.658Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TareaViewModel.cs",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\TareaViewModel.cs",
               "RelativeDocumentMoniker": "AdminTareas.ViewModels\\TareaViewModel.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.ViewModels\\TareaViewModel.cs",
               "RelativeToolTip": "AdminTareas.ViewModels\\TareaViewModel.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAowHYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAA5wHYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T04:36:24.885Z",
               "EditorCaption": ""
@@ -277,18 +299,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdminTareaContext.cs",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Context\\AdminTareaContext.cs",
-              "RelativeDocumentMoniker": "AdminTareas.Datos\\Context\\AdminTareaContext.cs",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Context\\AdminTareaContext.cs",
-              "RelativeToolTip": "AdminTareas.Datos\\Context\\AdminTareaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:02:38.138Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
               "Title": "PrioridadTareaRepository.cs",
               "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Datos\\Persistences\\Repositories\\PrioridadTareaRepository.cs",
@@ -297,7 +307,8 @@
               "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Repositories\\PrioridadTareaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T04:28:05.85Z"
+              "WhenOpened": "2025-09-06T04:28:05.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -309,7 +320,8 @@
               "RelativeToolTip": "AdminTareas.Modelos\\Entidades\\EstadoTarea.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:02:10.195Z"
+              "WhenOpened": "2025-09-08T04:02:10.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -321,7 +333,8 @@
               "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Interfaces\\IPrioridadTareaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T04:27:31.176Z"
+              "WhenOpened": "2025-09-06T04:27:31.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -333,7 +346,8 @@
               "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Interfaces\\IEstadoTareaRespository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T04:22:35.82Z"
+              "WhenOpened": "2025-09-06T04:22:35.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -345,7 +359,8 @@
               "RelativeToolTip": "AdminTareas.Modelos\\Entidades\\PrioridadTarea.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:02:07.577Z"
+              "WhenOpened": "2025-09-08T04:02:07.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -355,9 +370,10 @@
               "RelativeDocumentMoniker": "AdminTareas.Modelos\\Entidades\\Tarea.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Modelos\\Entidades\\Tarea.cs",
               "RelativeToolTip": "AdminTareas.Modelos\\Entidades\\Tarea.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:24:14.368Z"
+              "WhenOpened": "2025-09-07T16:24:14.368Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -365,12 +381,12 @@
               "Title": "TareaRepository.cs",
               "DocumentMoniker": "C:\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "ToolTip": "C:\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
+              "ToolTip": "C:\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs [Read Only]",
               "ViewState": "AgIAACsAAAAAAAAAAAAEwEUAAAAMAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T03:45:15.224Z",
-              "EditorCaption": ""
+              "EditorCaption": " [Read Only]"
             }
           ]
         }

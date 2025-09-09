@@ -1,4 +1,3 @@
-C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.ViewModels\bin\Debug\net8.0\adminTareas.db
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.ViewModels\bin\Debug\net8.0\AdminTareas.ViewModels.deps.json
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.ViewModels\bin\Debug\net8.0\AdminTareas.ViewModels.dll
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas.ViewModels\bin\Debug\net8.0\AdminTareas.ViewModels.pdb
