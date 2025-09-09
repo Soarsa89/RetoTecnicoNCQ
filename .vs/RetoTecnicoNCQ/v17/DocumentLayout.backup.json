@@ -97,24 +97,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\appsettings.json",
-              "RelativeDocumentMoniker": "AdminTareas\\appsettings.json",
-              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\appsettings.json",
-              "RelativeToolTip": "AdminTareas\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-09T03:31:15.21Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -138,7 +125,8 @@
               "RelativeToolTip": "AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T23:52:37.863Z"
+              "WhenOpened": "2025-09-03T23:52:37.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -198,8 +186,7 @@
               "RelativeToolTip": "AdminTareas\\AdminTareas.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-07T20:24:03.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T20:24:03.617Z"
             },
             {
               "$type": "Document",
@@ -209,10 +196,22 @@
               "RelativeDocumentMoniker": "AdminTareas.Utilidades\\Conexion\\AppSettings.cs",
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas.Utilidades\\Conexion\\AppSettings.cs",
               "RelativeToolTip": "AdminTareas.Utilidades\\Conexion\\AppSettings.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA8wCwAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T04:01:50.529Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\appsettings.json",
+              "RelativeDocumentMoniker": "AdminTareas\\appsettings.json",
+              "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\appsettings.json",
+              "RelativeToolTip": "AdminTareas\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-09T03:31:15.21Z"
             },
             {
               "$type": "Document",
@@ -237,8 +236,7 @@
               "RelativeToolTip": "AdminTareas.Datos\\AdminTareas.Datos.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-09T03:10:27.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T03:10:27.193Z"
             },
             {
               "$type": "Document",
@@ -249,8 +247,7 @@
               "ToolTip": "C:\\Code\\Laboratorios\\RetoTecnicoNCQ\\RetoTecnicoNCQ\\AdminTareas\\Main.cs [Design]",
               "RelativeToolTip": "AdminTareas\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T04:13:14.658Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-05T04:13:14.658Z"
             },
             {
               "$type": "Document",
@@ -262,7 +259,8 @@
               "RelativeToolTip": "AdminTareas.ViewModels\\TareaViewModel.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAAowHYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T04:36:24.885Z"
+              "WhenOpened": "2025-09-05T04:36:24.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -274,7 +272,8 @@
               "RelativeToolTip": "AdminTareas.Datos\\Context\\DesignTimeDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T04:35:53.254Z"
+              "WhenOpened": "2025-09-06T04:35:53.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -370,7 +369,8 @@
               "RelativeToolTip": "..\\..\\..\\..\\Users\\tavo_\\AppData\\Local\\SourceServer\\7dbe8089f8a2e1dca94f7a8140fcb498369ea0215590b7938151c437305de501\\AdminTareas.Datos\\Persistences\\Repositories\\TareaRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAEwEUAAAAMAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T03:45:15.224Z"
+              "WhenOpened": "2025-09-08T03:45:15.224Z",
+              "EditorCaption": ""
             }
           ]
         }
