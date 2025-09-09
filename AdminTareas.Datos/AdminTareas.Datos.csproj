@@ -20,8 +20,8 @@
   </ItemGroup>
 
 
-	<Target Name="CopyDatabase" AfterTargets="Build">
-		<Copy SourceFiles="adminTareas.db" DestinationFolder="$(SolutionDir)AdminTareas\bin\$(Configuration)\net8.0-windows\" />
-	</Target>
+	<ItemGroup>
+		<None Include="adminTareas.db" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
 
 </Project>

@@ -1,3 +1,4 @@
+C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas\bin\Debug\net8.0-windows\adminTareas.db
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas\bin\Debug\net8.0-windows\AdminTareas.exe
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas\bin\Debug\net8.0-windows\AdminTareas.deps.json
 C:\Code\Laboratorios\RetoTecnicoNCQ\RetoTecnicoNCQ\AdminTareas\bin\Debug\net8.0-windows\AdminTareas.runtimeconfig.json

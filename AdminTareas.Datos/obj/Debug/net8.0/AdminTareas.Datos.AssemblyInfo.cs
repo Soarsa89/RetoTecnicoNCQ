@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminTareas.Datos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a54c1277d5c3c60117933bd477bde1dbbaffad85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27b7ca7800d88e1cccdd7c4f31de1659706fcd31")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminTareas.Datos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminTareas.Datos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
